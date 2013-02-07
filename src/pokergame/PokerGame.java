@@ -17,6 +17,7 @@ public class PokerGame {
     public static void main(String[] args) {
         // TODO code application logic here
         Deck deck = new Deck();
+        System.out.println("This deck contains...");
         deck.printDeck();
     }
 }
