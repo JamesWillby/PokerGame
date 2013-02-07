@@ -31,6 +31,6 @@ public void printDeck()
 {
 for (int x=0; x < deck.size();x++)
     System.out.println("The " + deck.elementAt(x).returnName()
-                        + " has a value of " + deck.elementAt(x).getValue());
+                        + " which has a value of " + deck.elementAt(x).getValue());
 }
 }
