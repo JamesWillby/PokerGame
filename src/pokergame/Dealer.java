@@ -52,4 +52,7 @@ class Dealer implements Plays {
         System.out.println("I'm the dealer");
     }
     
+    public int cardsRemainingInTheDeck(){
+    return deck.cardsIntheDeck();
+    }
 }

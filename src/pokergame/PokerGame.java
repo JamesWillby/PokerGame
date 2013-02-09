@@ -4,6 +4,7 @@
  */
 package pokergame;
 import java.util.Vector;
+import java.io.*;
 
 /**
  *
@@ -16,19 +17,8 @@ public class PokerGame {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Deck deck = new Deck();
-        System.out.println("Here is our deck ...");
-        System.out.println();
-        deck.printDeck();
-        System.out.println();
-        
-        System.out.println("Now we shuffle it ...");
-        System.out.println();
-        deck.shuffleTheCards();
-        deck.printDeck();
-        
-        Plays player = new Participants().returnPlayer("Player");
-        Plays dealer = new Participants().returnPlayer("Dealer");
+        Player player = new Player();
+        Dealer dealer = new Dealer();
         
         System.out.println();
         System.out.println("And here are our players ...");
@@ -37,5 +27,23 @@ public class PokerGame {
         player.printName();
         dealer.printName();
         System.out.println();
+        
+        System.out.println("Round one ...");
+        System.out.println();
+        
+        dealer.shuffleTheDeck();
+        for(int x = 0;x < 3;x++)
+        {
+             Card c_r = dealer.dealACard();
+             player.takeCard(c_r);           
+             dealer.dealToSelf();
+        }
+        System.out.println();
+        System.out.println("There are " + dealer.cardsRemainingInTheDeck() + " cards in the deck");
+        System.out.println();
+         System.out.println("What does the dealer wish to do?");
+         System.out.println();
+        
+        
                 
  }}
