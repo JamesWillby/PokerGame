@@ -15,7 +15,10 @@ private static String[] names = {"Two","Three","Four","Five","Six","Seven","Eigh
 private static int[] values = {2,3,4,5,6,7,8,9,10,11,12,13,14};
 private Vector<Card> deck = null;
 
-public Deck()       
+    /**
+     *
+     */
+    public Deck()       
 {
         deck = new Vector<Card>(); // initialize the empty vector
         for (int x = 0; x < suites.length;x++)
@@ -29,25 +32,32 @@ public void printDeck()
         System.out.println("The " + deck.elementAt(x).returnName()
         + " which has a value of " + deck.elementAt(x).getValue());
 }
+    /**
+     *
+     * @return
+     */
 public int cardsIntheDeck()
 {
         return deck.size();
 }
 
-public int generateRandomNumber(int size)
+private int generateRandomNumber(int size)
 
 {
        return r.nextInt(size); // generates a random number for the shuffling method
 }                                         
 
-
+public Card returnTheTopCard()
+{
+return deck.get(deck.size()-1);
+}
 public void shuffleTheCards()
 {
     if (deck.size() <= 1)
-            System.err.println("Cannot shuffle a deck of 0 or 1 cards");
+                {System.err.println("Cannot shuffle a deck of 0 or 1 cards");}
     else
             {
-                for(int x = 0;x < deck.size();x++) //Start at the first card
+                for(int x = 0;x < deck.size();x++) //Start at the first card and re-arrange the deck
                 {
                      int position1 = generateRandomNumber(deck.size());
                      int position2 = generateRandomNumber(deck.size());

@@ -10,8 +10,8 @@ package pokergame;
  */
 public interface Plays {
     
-    public Card takeCard();
-    public void throwAwayCard();
-    
+    public void takeCard(Card cr);
+    public Card throwAwayCard();
+    public void printName();
     
 }

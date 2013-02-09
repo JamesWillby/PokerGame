@@ -20,11 +20,12 @@ public class Participants implements PersonFactory {
     }
     
     public Plays returnPlayer(String name)
-    {
-      if (name.equals("Dealer"))  
-        getNewDealer();
-      if (name.equals("Player"))
-          getNewPlayer();
-     return null;
+    { 
+     switch(name)
+     {
+         case "Dealer" : return getNewDealer();
+         case "Player" : return getNewPlayer();
+         default :return null;
+      }
     } 
 }
