@@ -37,7 +37,7 @@ public int cardsIntheDeck()
 public int generateRandomNumber(int size)
 
 {
-       return r.nextInt(size); // Standard pattern to generate a random number
+       return r.nextInt(size); // generates a random number for the shuffling method
 }                                         
 
 
@@ -49,8 +49,8 @@ public void shuffleTheCards()
             {
                 for(int x = 0;x < deck.size();x++) //Start at the first card
                 {
-                     int position1 = generateRandomNumber(deck.size()-1);
-                     int position2 = generateRandomNumber(deck.size()-1);
+                     int position1 = generateRandomNumber(deck.size());
+                     int position2 = generateRandomNumber(deck.size());
                      Card card1 = deck.get(position1);
                      Card card2 = deck.get(position2);
                      deck.setElementAt(card2, position1);
