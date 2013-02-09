@@ -4,13 +4,12 @@
  */
 package pokergame;
 import java.util.*;
-import java.math.*;
 /**
  *
  * @author jameswillby
  */
 public class Deck {
-    
+private Random r = new Random();    
 private static String[] suites = {"Clubs","Hearts","Spades","Diamonds"};  
 private static String[] names = {"Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King","Ace"};
 private static int[] values = {2,3,4,5,6,7,8,9,10,11,12,13,14};
@@ -38,7 +37,7 @@ public int cardsIntheDeck()
 public int generateRandomNumber(int size)
 
 {
-        return (int)(Math.random()*size); // Standard pattern to generate a random number
+       return r.nextInt(size); // Standard pattern to generate a random number
 }                                         
 
 
