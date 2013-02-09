@@ -18,6 +18,7 @@ public class PokerGame {
         // TODO code application logic here
         Deck deck = new Deck();
         System.out.println("This deck contains...");
+        deck.shuffleTheCards();
         deck.printDeck();
-    }
-}
+                
+ }}
