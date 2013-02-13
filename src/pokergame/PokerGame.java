@@ -32,7 +32,7 @@ public class PokerGame {
         System.out.println();
         
         dealer.shuffleTheDeck();
-        for(int x = 0;x < 3;x++)
+        for(int x = 0;x < 5;x++)
         {
              Card c_r = dealer.dealACard();
              player.takeCard(c_r);           
@@ -43,6 +43,10 @@ public class PokerGame {
         System.out.println();
          System.out.println("What does the dealer wish to do?");
          System.out.println();
+        
+         System.out.println("Dealer inspects their hand");
+         System.out.println();
+         
         
         
                 

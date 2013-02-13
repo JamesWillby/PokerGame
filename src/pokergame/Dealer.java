@@ -14,13 +14,14 @@ class Dealer implements Plays {
     private Vector<Card> hand = null;
     private Deck deck = null;
     private Vector<Card> discards = null;
+    private DealerBrain myBrain = null;
     
     public Dealer(){                // create a new instance and initialises and assigns the deck,                          
         deck = new Deck();          // the dealers hand and the discard pile. 
         hand = new Vector<Card>();
         discards = new Vector<Card>();
+        myBrain = new DealerBrain();
     }
-    
     public void shuffleTheDeck() {
         deck.shuffleTheCards(); // Dealer shuffles the deck
     }
@@ -30,7 +31,9 @@ class Dealer implements Plays {
     }
     
     public void dealToSelf() {
-        takeCard(dealACard()); // Dealer adds a card to his own hand
+        Card cr = dealACard();
+        takeCard(cr); // Dealer adds a card to his own hand
+        System.out.println("The dealer recieves the " + cr.returnName());
     }
    
     public void addToDiscardPile(Card cr) {  // add a thrown card to the discards

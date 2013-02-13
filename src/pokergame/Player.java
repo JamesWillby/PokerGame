@@ -30,6 +30,10 @@ class Player implements Plays{
     public void printName()
     {
     System.out.println("I'm the player");
+    }
     
+    public Vector<Card> showCards()
+    {
+       return cards;
     }
 }

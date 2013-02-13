@@ -11,8 +11,8 @@ import java.util.*;
 public class Deck {
 private Random r = new Random();    
 private static String[] suites = {"Clubs","Hearts","Spades","Diamonds"};  
-private static String[] names = {"Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King","Ace"};
-private static int[] values = {2,3,4,5,6,7,8,9,10,11,12,13,14};
+private static String[] names = {"","","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King","Ace"};
+private static int[] values = {0,0,2,3,4,5,6,7,8,9,10,11,12,13,14};
 private Vector<Card> deck = null;
 private DealerBrain brain = null;
 
@@ -20,7 +20,7 @@ public Deck()
 {
         deck = new Vector<Card>(); // initialize the empty vector
         for (int x = 0; x < suites.length;x++)
-        for(int y =0;y < names.length;y++)
+        for(int y =2;y < names.length;y++)
         deck.add(new Card(suites[x],names[y],values[y])); // add the cards of each suite in order
        
 }
@@ -30,6 +30,10 @@ public void printDeck()
         for (int x=0; x < deck.size();x++)
         System.out.println("The " + deck.elementAt(x).returnName()
         + " which has a value of " + deck.elementAt(x).getValue());
+}
+
+public String getName(int x){ 
+    return names[x];
 }
 
 public int cardsIntheDeck()
@@ -43,7 +47,6 @@ private int generateRandomNumber(int size){ // generates a random number for the
 
 public Card returnTheTopCard(){
  Card card = deck.get(deck.size()-1);
- System.out.println("The card dealt is the "+ card.returnName());
  deck.removeElementAt(deck.size()-1); 
  return card;
 }
