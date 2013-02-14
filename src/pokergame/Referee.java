@@ -9,14 +9,30 @@ import java.util.Vector;
  *
  * @author jameswillby
  */
-public class Referee {
+public class Referee implements PokerGamePerson {
     
+    @Override
     public void evaluateTheHands(Vector<Card> dealer, Vector<Card> player)
     {
-        
-        
-    }
-   
+       boolean player_flush = IsThereAFlush(player); 
+       boolean dealer_flush = IsThereAFlush(dealer); 
+       boolean player_straight = IsThereAStraight(player); 
+       boolean dealer_straight = IsThereAStraight(dealer); 
+       int player_set_score = AreThereSets(player);
+       int dealer_set_score = AreThereSets(dealer);
+       int player_cards_value = sumCardValues(player);
+       int dealer_cards_value = sumCardValues(dealer);
+       
+        if (player_flush || dealer_flush)
+       {
+            
+       }
+       
+       
+       
+    }   
+    
+    @Override
       public int FindTheHighCard(Vector<Card> hand) // return the value of the highest ranking card
     {       int highCard = 0;
             for (int x = 0; x < hand.size(); x++) 
@@ -26,7 +42,8 @@ public class Referee {
             }
             return highCard;
      }
-    public boolean IsThereaStraight(Vector<Card> hand) // examine the hand to see if there is a straight
+    @Override
+    public boolean IsThereAStraight(Vector<Card> hand) // examine the hand to see if there is a straight
     {
          for(int x = 1;x < hand.size(); x++) // first we set the cards in ascending order
          {
@@ -45,6 +62,7 @@ public class Referee {
          }
          return true;
     } 
+    @Override
     public boolean IsThereAFlush(Vector <Card> hand){ // examine the hand to see if there's a flush. 
         for (int x = 1; x < hand.size();x++)
         {
@@ -54,11 +72,12 @@ public class Referee {
         return true;
     }
     
+    @Override
     public int AreThereSets(Vector<Card> hand) { // looks for sets up to a full house. Returns an integer from 0 - 5         
         Vector<Integer> values = new Vector<Integer>();     
         for(int x = 0;x < hand.size();x++)
         {
-           Integer integer = new Integer(hand.get(x).getValue());   // now we determine distinct set values
+           Integer integer = new Integer(hand.get(x).getValue());   // first we determine distinct set values
             if (values.size() == 0) 
             {
                     values.add(integer);
@@ -69,7 +88,7 @@ public class Referee {
             else values.add(integer);
         }
         
-        switch (values.size()) // finally we return an int code for each potential hand
+        switch (values.size()) // now we return an int code for each potential hand
         {
             case 5: return 0; // high card
             case 4: return 1; // pair   
@@ -93,7 +112,7 @@ public class Referee {
                 
             }
              
-            case 2: {
+            case 2: {  // need to decide if it's four of a kind or a full house
                 
                for (int x =0; x < hand.size();x++)
                {
@@ -103,7 +122,7 @@ public class Referee {
                     if (hand.get(x).getValue() == hand.get(y).getValue())
                         count++;
                     if (count == 4)
-                          return 4; // set
+                          return 4; // four of a kind
                }
                
                
@@ -112,12 +131,29 @@ public class Referee {
                 
             }
                 
-            default: return 0;  
+            default: return 0;  // no sets
                 
         }   
         }
             
-         
-    
+    @Override
+ public int sumCardValues(Vector<Card> cr){ // return the total of all the cards
+     int sum = 0;
+     for (int x =0;x <cr.size();x++)
+     {
+     sum = sum + cr.get(x).getValue();    
+     }
+     return sum;
+ }
+
+    @Override
+    public void takeCard(Card cr) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void shuffleTheDeck() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     
 }

@@ -17,37 +17,19 @@ public class PokerGame {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Player player = new Player();
-        Dealer dealer = new Dealer();
         
-        System.out.println();
-        System.out.println("And here are our players ...");
+        PokerGamePersonFactory personFactory = new PokerGamePersonFactory();
         
-        System.out.println();
-        player.printName();
-        dealer.printName();
-        System.out.println();
+        Player player = (Player) personFactory.returnPerson("player");
         
-        System.out.println("Round one ...");
-        System.out.println();
         
-        dealer.shuffleTheDeck();
-        for(int x = 0;x < 5;x++)
-        {
-             Card c_r = dealer.dealACard();
-             player.takeCard(c_r);           
-             dealer.dealToSelf();
-        }
-        System.out.println();
-        System.out.println("There are " + dealer.cardsRemainingInTheDeck() + " cards in the deck");
-        System.out.println();
-         System.out.println("What does the dealer wish to do?");
-         System.out.println();
         
-         System.out.println("Dealer inspects their hand");
-         System.out.println();
+        
+        
+    
+   
          
-        
+         
         
                 
  }}

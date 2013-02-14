@@ -8,7 +8,8 @@ import java.util.*;
  *
  * @author jameswillby
  */
-public class Deck {
+public class Deck extends PokerGameObject {
+    
 private Random r = new Random();    
 private static String[] suites = {"Clubs","Hearts","Spades","Diamonds"};  
 private static String[] names = {"","","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King","Ace"};

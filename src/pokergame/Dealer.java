@@ -9,7 +9,7 @@ import java.util.Vector;
  *
  * @author jameswillby
  */
-class Dealer implements Plays {
+class Dealer implements PokerGamePerson {
 
     private Vector<Card> hand = null;
     private Deck deck = null;
@@ -40,22 +40,52 @@ class Dealer implements Plays {
         discards.add(cr);
     }
     
-    @Override
+    
     public void takeCard(Card cr) { // pick up dealt card and add to the dealer's hand
      hand.add(cr);   
     }
 
-    @Override
+   
     public Card throwAwayCard() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
+
     public void printName() {
         System.out.println("I'm the dealer");
     }
     
     public int cardsRemainingInTheDeck(){
     return deck.cardsIntheDeck();
+    }
+
+    @Override
+    public void evaluateTheHands(Vector<Card> dealer, Vector<Card> player) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public int FindTheHighCard(Vector<Card> hand) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean IsThereAStraight(Vector<Card> hand) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean IsThereAFlush(Vector<Card> hand) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public int AreThereSets(Vector<Card> hand) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public int sumCardValues(Vector<Card> cr) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
