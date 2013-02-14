@@ -43,7 +43,7 @@ public class PokerGameTest {
     public void testMain() {
         System.out.println("main");
         String[] args = null;
-        PokerGame.main(args);
+        PokerGamePerson.main(args);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
