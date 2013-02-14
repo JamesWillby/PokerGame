@@ -18,27 +18,25 @@ class Player implements PokerGamePerson{
     }
     
     
+    @Override
     public void takeCard(Card cr) {
+        System.out.println("You receive the " + cr.returnName());
         cards.add(cr);
     }
 
-   
+    @Override
     public Card throwAwayCard() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
+    @Override
     public void printName()
     {
     System.out.println("I'm the player");
     }
     
-    public Vector<Card> showCards()
-    {
-       return cards;
-    }
-
     @Override
-    public void evaluateTheHands(Vector<Card> dealer, Vector<Card> player) {
+    public String evaluateTheHands(Vector<Card> dealer, Vector<Card> player) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
@@ -70,5 +68,30 @@ class Player implements PokerGamePerson{
     @Override
     public int sumCardValues(Vector<Card> cr) {
         throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void dealToSelf() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void addToDiscardPile(Card cr) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public int cardsRemainingInTheDeck() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public Card dealACard() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public Vector<Card> showHand() {
+       return cards;
     }
 }

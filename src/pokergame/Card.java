@@ -8,7 +8,7 @@ package pokergame;
  *
  * @author jameswillby
  */
-public class Card extends PokerGameObject {
+public class Card {
     
     private String suite,name;
     private int value;

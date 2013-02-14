@@ -10,11 +10,11 @@ package pokergame;
  */
 public class PokerGamePersonFactory {
     
-public PokerGamePerson returnPerson(String person){
+public PokerGamePerson returnPerson(String person){ // returns a class implementing PokerGamePerson
        
-switch(person){
+switch(person){ // here we call private factory methods
 
-    case "dealer" : return getNewDealer();
+    case "dealer" : return getNewDealer(); 
     case "player" : return getNewPlayer();
     case "referee" : return getNewReferee();
     default: return null;

@@ -8,14 +8,13 @@ import java.util.*;
  *
  * @author jameswillby
  */
-public class Deck extends PokerGameObject {
+public class Deck {
     
 private Random r = new Random();    
 private static String[] suites = {"Clubs","Hearts","Spades","Diamonds"};  
 private static String[] names = {"","","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King","Ace"};
 private static int[] values = {0,0,2,3,4,5,6,7,8,9,10,11,12,13,14};
 private Vector<Card> deck = null;
-private DealerBrain brain = null;
 
 public Deck()       
 {

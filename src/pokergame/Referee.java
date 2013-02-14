@@ -12,8 +12,9 @@ import java.util.Vector;
 public class Referee implements PokerGamePerson {
     
     @Override
-    public void evaluateTheHands(Vector<Card> dealer, Vector<Card> player)
+    public String evaluateTheHands(Vector<Card> dealer, Vector<Card> player) // determines which player is winning
     {
+      
        boolean player_flush = IsThereAFlush(player); 
        boolean dealer_flush = IsThereAFlush(dealer); 
        boolean player_straight = IsThereAStraight(player); 
@@ -22,15 +23,60 @@ public class Referee implements PokerGamePerson {
        int dealer_set_score = AreThereSets(dealer);
        int player_cards_value = sumCardValues(player);
        int dealer_cards_value = sumCardValues(dealer);
+       int dealer_high_card = FindTheHighCard(dealer);
+       int player_high_card = FindTheHighCard(player);
        
-        if (player_flush || dealer_flush)
+        if (player_straight || dealer_straight)
        {
-            
-       }
+            if (!player_straight && dealer_straight)
+                return "The Dealer is winning";
+             if (player_straight && !dealer_straight)
+                 return "You are winning";
+             else 
+             {
+                 if (player_cards_value != dealer_cards_value)
+                     return (player_cards_value > dealer_cards_value) ? "You are winning" : "The Dealer is winning"; 
+                 else return "It's a draw!";
+             }
+        }
+        
+           if (player_flush || dealer_flush)
+       {
+            if (!player_flush && dealer_flush)
+                return "The Dealer is winning";
+             if (player_flush && !dealer_flush)
+                 return "You are winning";
+             else 
+             {
+                 if (player_cards_value != dealer_cards_value)
+                     return (player_cards_value > dealer_cards_value) ? "You are winning" : "The Dealer is winning"; 
+                 else return "It's a draw!";
+             }
+        }
        
-       
-       
-    }   
+     if (player_set_score > 0 && dealer_set_score > 0)
+     {      
+            if (player_set_score != dealer_set_score )
+                    return (player_set_score > dealer_set_score) ? "You are winning" : "The Dealer is winning";
+            else if (player_set_score == dealer_set_score)
+             {
+                 if (player_cards_value != dealer_cards_value)
+                     return (player_cards_value > dealer_cards_value) ? "You are winning" : "The Dealer is winning"; 
+                 else return "It's a draw!";
+             }
+     }
+     
+     if (player_high_card == dealer_high_card)
+            return "It's a draw";
+     
+     if (player_high_card > dealer_high_card)
+         return "You are winning";
+     else return "The Dealer is winning";
+     
+     
+     
+     
+}   
     
     @Override
       public int FindTheHighCard(Vector<Card> hand) // return the value of the highest ranking card
@@ -63,7 +109,8 @@ public class Referee implements PokerGamePerson {
          return true;
     } 
     @Override
-    public boolean IsThereAFlush(Vector <Card> hand){ // examine the hand to see if there's a flush. 
+    public boolean IsThereAFlush(Vector <Card> hand) // examine the hand to see if there's a flush.
+    {  
         for (int x = 1; x < hand.size();x++)
         {
             if (!hand.get(x).getSuite().equals(hand.get(x-1).getSuite()))
@@ -73,7 +120,8 @@ public class Referee implements PokerGamePerson {
     }
     
     @Override
-    public int AreThereSets(Vector<Card> hand) { // looks for sets up to a full house. Returns an integer from 0 - 5         
+    public int AreThereSets(Vector<Card> hand) // looks for sets up to a full house. Returns an integer from 0 - 5 
+    {         
         Vector<Integer> values = new Vector<Integer>();     
         for(int x = 0;x < hand.size();x++)
         {
@@ -137,7 +185,8 @@ public class Referee implements PokerGamePerson {
         }
             
     @Override
- public int sumCardValues(Vector<Card> cr){ // return the total of all the cards
+ public int sumCardValues(Vector<Card> cr) // return the total of all the cards
+    { 
      int sum = 0;
      for (int x =0;x <cr.size();x++)
      {
@@ -153,6 +202,41 @@ public class Referee implements PokerGamePerson {
 
     @Override
     public void shuffleTheDeck() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void dealToSelf() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void addToDiscardPile(Card cr) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public int cardsRemainingInTheDeck() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void printName() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public Card dealACard() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public Card throwAwayCard() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public Vector<Card> showHand() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     

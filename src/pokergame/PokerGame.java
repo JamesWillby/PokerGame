@@ -19,10 +19,22 @@ public class PokerGame {
         // TODO code application logic here
         
         PokerGamePersonFactory personFactory = new PokerGamePersonFactory();
+        PokerGamePerson player,dealer,referee; 
         
-        Player player = (Player) personFactory.returnPerson("player");
+        player = personFactory.returnPerson("player");
+        dealer = personFactory.returnPerson("dealer");
+        referee = personFactory.returnPerson("referee");
         
+        dealer.shuffleTheDeck();
         
+        for (int x=0; x < 5;x++)
+        {
+            player.takeCard(dealer.dealACard());
+            dealer.dealToSelf();
+        }
+        System.out.println();
+        System.out.println(referee.evaluateTheHands(dealer.showHand(),player.showHand()));
+       
         
         
         
