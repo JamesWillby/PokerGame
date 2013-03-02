@@ -1,9 +1,10 @@
-/*
+/**
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 package pokergame;
 import java.util.Vector; 
+import static org.mockito.Mockito.*;
 
 /**
  *

@@ -11,8 +11,25 @@ import java.util.Vector;
 public class Hand {
  
     private Vector<Card> hand = null;
+
+    Hand() {
+        this.hand = new Vector<Card>();
+    }
     
-    public Hand (Vector<Card> hand)
-    {this.hand = hand;}
+    public void add(Card e)
+    {
+        hand.add(e);
+    }
+    
+    public void setElementAt(Card c, int position)
+    {
+    hand.setElementAt(c, position);
+    }
+    public int size()
+    { return hand.size();}
+    
+    public Card get(int position){
+       return hand.get(position);
+    }
     
 }

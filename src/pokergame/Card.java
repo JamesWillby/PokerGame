@@ -10,28 +10,17 @@ package pokergame;
  */
 public class Card {
     
-    private String suite,name;
+    private String suite;
     private int value;
     
-    public Card(String su, String nm, int x)
+    public Card(String su, int x)
     {
         this.suite = su;
-        this.name = nm;
         this.value = x;
-    }
-    
-    public String returnName()
-    {
-        return name + " of " + suite;
-        
     }
     
     public void setSuite(String suite) {
         this.suite = suite;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void setValue(int value) {
@@ -40,10 +29,6 @@ public class Card {
 
     public String getSuite() {
         return suite;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public int getValue() {

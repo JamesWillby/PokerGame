@@ -47,7 +47,6 @@ class Dealer implements PokerGamePerson {
     
     @Override
     public void takeCard(Card cr) { // pick up dealt card and add to the dealer's hand
-        System.out.println("The Dealer receives " + cr.returnName());
         hand.add(cr);   
     }
 

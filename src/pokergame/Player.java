@@ -20,7 +20,6 @@ class Player implements PokerGamePerson{
     
     @Override
     public void takeCard(Card cr) {
-        System.out.println("You receive the " + cr.returnName());
         cards.add(cr);
     }
 

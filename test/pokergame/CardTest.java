@@ -1,14 +1,17 @@
+package pokergame;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package pokergame;
+
 
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import pokergame.Card;
 import static org.junit.Assert.*;
 
 /**
@@ -37,20 +40,6 @@ public class CardTest {
     }
 
     /**
-     * Test of returnName method, of class Card.
-     */
-    @Test
-    public void testReturnName() {
-        System.out.println("returnName");
-        Card instance = null;
-        String expResult = "";
-        String result = instance.returnName();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
      * Test of setSuite method, of class Card.
      */
     @Test
@@ -59,19 +48,6 @@ public class CardTest {
         String suite = "";
         Card instance = null;
         instance.setSuite(suite);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setName method, of class Card.
-     */
-    @Test
-    public void testSetName() {
-        System.out.println("setName");
-        String name = "";
-        Card instance = null;
-        instance.setName(name);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -103,19 +79,6 @@ public class CardTest {
         fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of getName method, of class Card.
-     */
-    @Test
-    public void testGetName() {
-        System.out.println("getName");
-        Card instance = null;
-        String expResult = "";
-        String result = instance.getName();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
 
     /**
      * Test of getValue method, of class Card.
