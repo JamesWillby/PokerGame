@@ -16,6 +16,10 @@ public class Hand {
         this.hand = new Vector<Card>();
     }
     
+    Hand(Hand another){
+        this.hand = another.hand;
+    }
+    
     public void add(Card e)
     {
         hand.add(e);
