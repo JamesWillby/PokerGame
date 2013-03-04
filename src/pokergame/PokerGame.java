@@ -18,6 +18,8 @@ public class PokerGame {
     public static void main(String[] args) {
         // TODO code application logic here
         
+       /**
+        
         PokerGamePersonFactory personFactory = new PokerGamePersonFactory();
         PokerGamePerson player,dealer,referee; 
         
@@ -36,12 +38,7 @@ public class PokerGame {
         System.out.println(referee.evaluateTheHands(dealer.showHand(),player.showHand()));
        
         
-        
-        
-    
-   
-         
-         
-        
+        */
+          
                 
  }}

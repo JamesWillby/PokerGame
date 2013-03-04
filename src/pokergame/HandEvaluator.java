@@ -4,6 +4,9 @@
  */
 package pokergame;
 
+import java.util.Collections;
+import java.util.Vector;
+
 /**
  *
  * @author jameswillby
@@ -11,8 +14,10 @@ package pokergame;
 public abstract class HandEvaluator {
 
    public static int assessHand(Hand hand) // returns a rank between 0 and 6
-   {
-       Hand testHand = generateTestHand(hand);
+   {   
+       Hand testHand = new Hand(hand);
+       
+       orderHand(testHand);
       
        boolean straight = isThereAStraight(testHand);
        boolean flush = isThereAFlush(testHand);
@@ -27,7 +32,7 @@ public abstract class HandEvaluator {
        if (three) return 3;
        if (two_pair) return 2;
        if (pair) return 1;
-       
+  
        return 0;
        
     }
@@ -115,22 +120,31 @@ public abstract class HandEvaluator {
         
         else return false;        
     }
-
-    static Hand generateTestHand(Hand hand) {
-        Hand testHand = new Hand(hand); 
-        
-        for(int x = 1;x < testHand.size(); x++) 
-         {
-            if(testHand.get(x).getValue() < testHand.get(x-1).getValue())
+    
+    static void orderHand(Hand testHand)       
+    {
+        while (true){
+        for (int x = 1; x < testHand.size();x++){
+        if (testHand.get(x).getValue() < testHand.get(x-1).getValue())
             {
-                Card card1 = testHand.get(x);
-                Card card2 = testHand.get(x-1);
-                testHand.setElementAt(card2, x);
-                testHand.setElementAt(card1, x-1);
+                 Card card1 = testHand.get(x);
+                 Card card2 = testHand.get(x-1);
+                 testHand.setElementAt(card2, x);
+                 testHand.setElementAt(card1, x-1);
+                 
             }
-         }
-        return testHand;        
+        }
+        int count = 0;
+        for (int x = 1; x < testHand.size();x++){
+        if (testHand.get(x).getValue() < testHand.get(x-1).getValue())
+        count++;
+        }
+        if (count == 0) break;        
+      }
     }
     
+
+            
+            
 
 }

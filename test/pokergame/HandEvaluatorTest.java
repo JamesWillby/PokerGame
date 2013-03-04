@@ -75,13 +75,16 @@ public class HandEvaluatorTest {
         
         int expectedValue = 4;
         int actualValue;
-        String suite1 = "Hearts",suite2 = "Clubs";
         Hand testHand = new Hand();
         
-        for (int x = 1; x <= 5; x++){
-        if (x==1) testHand.add(new Card(suite1,x));
-        else testHand.add(new Card(suite2,x)); }
-        
+          testHand.add(new Card("Spades",7));
+          testHand.add(new Card("Hearts",8));
+          testHand.add(new Card("Hearts",9));
+          testHand.add(new Card("Hearts",5));
+          testHand.add(new Card("Hearts",6));
+   
+       int x = HandEvaluator.assessHand(testHand);  
+       System.out.println(x); 
         actualValue = HandEvaluator.assessHand(testHand);
         assertEquals("Should be 4",expectedValue,actualValue);
         
@@ -166,10 +169,8 @@ public class HandEvaluatorTest {
         String suite1 = "Hearts",suite2 = "Clubs";
         Hand testHand = new Hand();
         for(int x = 1;x <= 5;x++)
-        {
-         if (x==2 || x==4) testHand.add(new Card(suite1,x)); 
-         else testHand.add(new Card(suite2,x));
-        }
+        {if (x==2 || x==4) testHand.add(new Card(suite1,x)); 
+         else testHand.add(new Card(suite2,x));}
         actualValue = HandEvaluator.isThereAStraight(testHand);
         assertEquals("This is incorrect",expectedValue,actualValue);
     }
@@ -254,6 +255,4 @@ public class HandEvaluatorTest {
         actualValue = HandEvaluator.isThereTwoPair(testHand);
         assertEquals("This is incorrect",expectedValue,actualValue);
     }
-    
-    
 }

@@ -36,6 +36,7 @@ public class Hand {
        return hand.get(position);
     }
     
-    
+    public Vector<Card> contents()
+    {return hand;}
     
 }
