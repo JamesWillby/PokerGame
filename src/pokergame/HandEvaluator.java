@@ -15,9 +15,21 @@ public abstract class HandEvaluator {
 
    public static int assessHand(Hand hand) // returns a rank between 0 and 6
    {   
-       Hand testHand = new Hand(hand);
        
-       orderHand(testHand);
+Hand testHand = new Hand();
+testHand.add(hand.get(0));
+for(int k = 1; k < hand.size(); k++){
+testHand.add(hand.get(k));
+for(int i = k; i-1 >= 0 ;i--){
+if (testHand.get(i).getValue() < testHand.get(i-1).getValue())
+{
+    Card card1 = testHand.get(i);
+    Card card2 = testHand.get(i-1);
+    testHand.setElementAt(card2, i);
+    testHand.setElementAt(card1, i-1);
+}
+}
+}
       
        boolean straight = isThereAStraight(testHand);
        boolean flush = isThereAFlush(testHand);

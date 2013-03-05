@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 package pokergame;
-import java.util.Vector;
+import java.util.*;
 import java.io.*;
 
 /**
@@ -40,5 +40,21 @@ public class PokerGame {
         
         */
           
+        Hand testHanda = new Hand();
+        
+          testHanda.add(new Card("Hearts",7));
+          testHanda.add(new Card("Spades",4));
+          testHanda.add(new Card("Hearts",3));
+          testHanda.add(new Card("Hearts",2));
+          testHanda.add(new Card("Hearts",1));
+       
+          
+        int y = HandEvaluator.assessHand(testHanda);
+        
+        System.out.println(y);
+        
+        for (int x=0;x<testHanda.size();x++)
+        System.out.println(testHanda.get(x).getSuite() + " " + testHanda.get(x).getValue());
+       
                 
  }}

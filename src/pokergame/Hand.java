@@ -8,7 +8,7 @@ import java.util.Vector;
  *
  * @author jameswillby
  */
-public class Hand {
+public class Hand implements Cloneable{
  
     private Vector<Card> hand = null;
 
@@ -38,5 +38,18 @@ public class Hand {
     
     public Vector<Card> contents()
     {return hand;}
+    
+    @Override
+    public Object clone()
+      {
+          try
+      {
+              return super.clone();
+          }
+      catch( CloneNotSupportedException e )
+      {
+              return null;
+          }
+      }
     
 }
