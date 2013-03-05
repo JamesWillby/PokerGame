@@ -10,11 +10,11 @@ import java.util.Vector;
  */
 class Player implements PokerGamePerson{
 
-    private Vector<Card> cards = null;    
+    private Hand cards = null;    
     
     public Player()
     {
-        cards = new Vector<Card>();
+        cards = new Hand();
     }
     
     
@@ -29,13 +29,7 @@ class Player implements PokerGamePerson{
     }
     
     @Override
-    public void printName()
-    {
-    System.out.println("I'm the player");
-    }
-    
-    @Override
-    public String evaluateTheHands(Vector<Card> dealer, Vector<Card> player) {
+    public String evaluateTheHands(Hand dealer, Hand player) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
@@ -70,11 +64,6 @@ class Player implements PokerGamePerson{
     }
 
     @Override
-    public void dealToSelf() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
     public void addToDiscardPile(Card cr) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
@@ -90,7 +79,7 @@ class Player implements PokerGamePerson{
     }
 
     @Override
-    public Vector<Card> showHand() {
+    public Hand getHand() {
        return cards;
     }
 }

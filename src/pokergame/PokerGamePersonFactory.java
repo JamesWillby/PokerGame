@@ -16,7 +16,6 @@ switch(person){ // here we call private factory methods
 
     case "dealer" : return getNewDealer(); 
     case "player" : return getNewPlayer();
-    case "referee" : return getNewReferee();
     default: return null;
 }}
 
@@ -26,8 +25,6 @@ switch(person){ // here we call private factory methods
     private Player getNewPlayer()
     { return new Player();}
     
-    private Referee getNewReferee()
-    { return new Referee();}  
     
 }
 

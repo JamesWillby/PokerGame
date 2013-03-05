@@ -4,14 +4,14 @@ import java.util.Vector;
 
 public class DealerAI {
 	
-	Hand hand;
-	Vector<Card> swapcardsonecard;
-	Vector<Card> swapcardstwocards;
-	Vector<Card> swapcardsthreecards;
-	Vector<Card> swapcardsnocards = new Vector<Card>();
+	 Hand hand;
+	 Vector<Card> swapcardsonecard;
+	 Vector<Card> swapcardstwocards;
+	 Vector<Card> swapcardsthreecards;
+	 Vector<Card> swapcardsnocards = new Vector<Card>();
 	int currentrank;
 	
-	public DealerAI(Hand myhand) {  
+        public DealerAI(Hand myhand) {  
 		this.hand = new Hand(); //create new Hand so doesn't alter it
 		for (int k = 0; k < myhand.size(); k++)  
 			hand.add(myhand.get(k));
@@ -26,7 +26,7 @@ public class DealerAI {
 		this.currentrank = HandEvaluator.assessHand(hand);
 	}
 
-	public Vector<Card> whichCardsShouldISwap() {
+	 public Vector<Card> whichCardsShouldISwap() {
 		
             /** Here we calculate the possible difference in rank for swapping
              * 1,2 or 3 cards. The double returns the effect on rank of the current 
@@ -50,7 +50,7 @@ public class DealerAI {
 		
 	}
 	
-	private Double rankDiffSwapOneCard() {
+	private  Double rankDiffSwapOneCard() {
 	
     Double rankdiffonecard = 0.0; // rank difference
 	Card bestcardtoswap = null;
@@ -71,7 +71,7 @@ public class DealerAI {
 		return rankdiffonecard;
 	}
 		
-	private Double rankDiffSwapTwoCards() {
+	private  Double rankDiffSwapTwoCards() {
 		
 		Double rankdiff = 0.0;
 		int bestcardoneindex = 0;
@@ -101,7 +101,7 @@ public class DealerAI {
 	}
 			
 			
-	private Double rankDiffSwapThreeCards() {
+	private  Double rankDiffSwapThreeCards() {
 		
 		Double rankdiff = 0.0;
 		int bestcardoneindex = 0;
@@ -137,7 +137,7 @@ public class DealerAI {
 		return rankdiff;
 	}
 
-	private Double rankDiffIfSwapped(int cardi) {
+	private  Double rankDiffIfSwapped(int cardi) {
 	/**
          * Here we create a new Special Deck containing all the cards
          * bar those in our current hand. We then iterate through all
@@ -168,7 +168,7 @@ public class DealerAI {
 		return rankdiffifswapped;
 	}	
 	
-	private Double rankDiffIfSwapped(int cardi, int cardm) {
+	private  Double rankDiffIfSwapped(int cardi, int cardm) {
 		
 		Double rankdiffifswapped = 0.0;
 		SpecialDeck tempdeck = new SpecialDeck(hand);
@@ -198,7 +198,7 @@ public class DealerAI {
 	}	
 	
 	
-	private Double rankDiffIfSwapped(int cardi, int cardm, int cardn) {
+	private  Double rankDiffIfSwapped(int cardi, int cardm, int cardn) {
 			
 		Double rankdiffifswapped = 0.0;
 		SpecialDeck tempdeck = new SpecialDeck(hand);

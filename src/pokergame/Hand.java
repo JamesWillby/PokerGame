@@ -35,4 +35,16 @@ public class Hand {
     
     
     
+    boolean matchedCard(Hand otherHand){
+        
+        for(int x = this.hand.size()-1; x > 0 ;x--)
+        {
+        for(int y = 0; y < otherHand.size();y++)
+        {   
+            if(this.hand.get(x).equals(otherHand.get(y)))
+                return true;
+        }
+        }
+        return false;
+    }
 }

@@ -34,5 +34,11 @@ public class Card {
     public int getValue() {
         return value;
     }
-    
+   
+    boolean equals(Card e)
+    {
+    if (this.suite.equals(e.getSuite()) && this.value == e.getValue())
+     return true;
+    return false;
+    }
 }
