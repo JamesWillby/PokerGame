@@ -14,13 +14,11 @@ class Dealer implements PokerGamePerson {
     private Vector<Card> hand = null;
     private Deck deck = null;
     private Vector<Card> discards = null;
-    private DealerBrain myBrain = null;
     
     public Dealer(){                // create a new instance and initialises and assigns the deck,                          
         deck = new Deck();          // the dealers hand and the discard pile. 
         hand = new Vector<Card>();
         discards = new Vector<Card>();
-        myBrain = new DealerBrain();
     }
     @Override
     public void shuffleTheDeck() {

@@ -11,10 +11,15 @@ public class DealerAI {
 	Vector<Card> swapcardsnocards = new Vector<Card>();
 	int currentrank;
 	
-	public DealerAI(Hand myhand) {
-		this.hand = new Hand();
-		for (int k = 0; k < myhand.size(); k++)
+	public DealerAI(Hand myhand) {  
+		this.hand = new Hand(); //create new Hand so doesn't alter it
+		for (int k = 0; k < myhand.size(); k++)  
 			hand.add(myhand.get(k));
+                
+                /** Here we have three vectors to decide whether we want to 
+                 * swap 1, 2 or 3 cards
+                 */
+                
 		this.swapcardsonecard = new Vector<Card>();
 		this.swapcardstwocards = new Vector<Card>();
 		this.swapcardsthreecards = new Vector<Card>();
@@ -23,6 +28,11 @@ public class DealerAI {
 
 	public Vector<Card> whichCardsShouldISwap() {
 		
+            /** Here we calculate the possible difference in rank for swapping
+             * 1,2 or 3 cards. The double returns the effect on rank of the current 
+             * hand for making the specified number of changes
+             */ 
+            
 		Double bestrankdiffonecard = rankDiffSwapOneCard();
 		
 		Double bestrankdifftwocards = rankDiffSwapTwoCards();
@@ -42,7 +52,7 @@ public class DealerAI {
 	
 	private Double rankDiffSwapOneCard() {
 	
-    Double rankdiffonecard = 0.0;
+    Double rankdiffonecard = 0.0; // rank difference
 	Card bestcardtoswap = null;
 	
 
@@ -128,11 +138,16 @@ public class DealerAI {
 	}
 
 	private Double rankDiffIfSwapped(int cardi) {
-	
+	/**
+         * Here we create a new Special Deck containing all the cards
+         * bar those in our current hand. We then iterate through all
+         * 47 other cards and determine how each card will alter the 
+         * rank of the current hand.
+         */
+            
 		Double rankdiffifswapped = 0.0;
-		
+		SpecialDeck tempdeck = new SpecialDeck(hand);
 		for (int j = 0; j < 47 ; j++){
-			SpecialDeck tempdeck = new SpecialDeck(hand);
 			Hand temphand = new Hand();
 			for (int k = 0; k < hand.size(); k++){
 				if (k == cardi)
@@ -156,9 +171,8 @@ public class DealerAI {
 	private Double rankDiffIfSwapped(int cardi, int cardm) {
 		
 		Double rankdiffifswapped = 0.0;
-		
+		SpecialDeck tempdeck = new SpecialDeck(hand);
 		for (int j = 0; j < 47 ; j++){
-			SpecialDeck tempdeck = new SpecialDeck(hand);
 			Hand temphand = new Hand();
 			for (int k = 0; k < hand.size(); k++){
 				if (k == cardi)
@@ -187,10 +201,9 @@ public class DealerAI {
 	private Double rankDiffIfSwapped(int cardi, int cardm, int cardn) {
 			
 		Double rankdiffifswapped = 0.0;
-		
+		SpecialDeck tempdeck = new SpecialDeck(hand);
 			for (int j = 0; j < 47 ; j++){
-				SpecialDeck tempdeck = new SpecialDeck(hand);
-				Hand temphand = new Hand();
+                            Hand temphand = new Hand();
 				for (int k = 0; k < hand.size(); k++){
 					if (k == cardi)
 						temphand.add(tempdeck.get(j));
