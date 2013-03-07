@@ -49,7 +49,7 @@ public Card get(int j) {
 public void printDeck()
 {
         for (int x=0; x < deck.size();x++)
-        System.out.println("Suit of" + deck.elementAt(x).getSuite() + "value of" + deck.elementAt(x).getValue());
+        System.out.println("Suit of " + deck.elementAt(x).getSuite() + " value of " + deck.elementAt(x).getValue());
 }
 
 }

@@ -44,7 +44,6 @@ public class CardTest {
      */
     @Test
     public void testSetSuite() {
-        System.out.println("setSuite");
         String expectedSuite = "Hearts";
         String actualSuite = "";
         Card instance = new Card("Clubs",3);
@@ -59,7 +58,6 @@ public class CardTest {
      */
     @Test
     public void testSetValue() {
-        System.out.println("setValue");
         int expectedValue = 10;
         int actualValue;
         Card instance = new Card("Clubs",3);
@@ -74,7 +72,6 @@ public class CardTest {
      */
     @Test
     public void testGetSuite() {
-        System.out.println("getSuite");
         Card instance = new Card("Hearts",10);
         String expResult = "Hearts";
         String result = instance.getSuite();
@@ -88,7 +85,6 @@ public class CardTest {
      */
     @Test
     public void testGetValue() {
-        System.out.println("getValue");
         Card instance = new Card("Hearts",10);
         int expResult = 10;
         int result = instance.getValue();
