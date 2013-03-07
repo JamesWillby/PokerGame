@@ -45,11 +45,11 @@ public class CardTest {
     @Test
     public void testSetSuite() {
         System.out.println("setSuite");
-        String suite = "";
-        Card instance = null;
-        instance.setSuite(suite);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String expectedSuite = "Hearts";
+        String actualSuite = "";
+        Card instance = new Card("Clubs",3);
+      assertEquals("Not the same suite",actualSuite,expectedSuite);
+        
     }
 
     /**

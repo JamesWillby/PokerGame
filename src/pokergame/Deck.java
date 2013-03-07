@@ -40,7 +40,9 @@ public Card returnTheTopCard(){
 
 public void shuffleTheCards(){
     if (deck.size() <= 1)
-                {System.err.println("Cannot shuffle a deck of 0 or 1 cards");}
+                {System.err.println("Cannot shuffle a deck of 0 or 1 cards");
+                System.exit(1);
+                }
     else
             {
                 for(int x = 0;x < deck.size();x++) //Start at the first card and re-arrange the deck

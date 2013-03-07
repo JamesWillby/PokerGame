@@ -59,4 +59,12 @@ public class GameTest {
        assertEquals("Not equals",actualBool,expectedBool);
     }
     
+    @Test
+    public void playGame(){
+    
+    
+    
+    
+    
+}
 }

@@ -19,6 +19,11 @@ public class Game {
     
     public Game(int x)
     {
+       if (x > 6 || x < 2) 
+        {   System.err.println ("Forbidden number of players");
+            System.exit(1);
+        }
+       
         players = new Vector<PokerGamePerson>();
         PokerGamePersonFactory personFactory = new PokerGamePersonFactory();
         PokerGamePerson dealer = personFactory.returnPerson("dealer");
@@ -41,8 +46,15 @@ public class Game {
             {
             players.get(y).takeCard(players.get(0).dealACard());
             }
-        }    
+        }
     }
+    
+    public void playGame()
+    {
+    
+        
+    }
+    
       
     public Hand getPlayerHand(int x)
     {
