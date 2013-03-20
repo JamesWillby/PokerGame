@@ -83,8 +83,7 @@ public class HandEvaluatorTest {
           testHand.add(new Card("Hearts",5));
           testHand.add(new Card("Hearts",6));
    
-       int x = HandEvaluator.assessHand(testHand);  
-       System.out.println(x); 
+        int x = HandEvaluator.assessHand(testHand);  
         actualValue = HandEvaluator.assessHand(testHand);
         assertEquals("Should be 4",expectedValue,actualValue);
         

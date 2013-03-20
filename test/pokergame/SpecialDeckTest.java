@@ -12,7 +12,6 @@ public class SpecialDeckTest {
 		TestHand myhand = new TestHand("highcard");
 		
 		SpecialDeck classUnderTest = new SpecialDeck(myhand);
-		classUnderTest.printDeck();
 		assertEquals("not the right size", 47, classUnderTest.cardsInDeck());
 		
 	}

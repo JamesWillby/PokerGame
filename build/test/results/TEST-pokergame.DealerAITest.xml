@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Macintosh-6.local" name="pokergame.DealerAITest" tests="8" time="15.39" timestamp="2013-03-05T19:05:18">
+<testsuite errors="0" failures="0" hostname="Macintosh-7.local" name="pokergame.DealerAITest" tests="8" time="15.353" timestamp="2013-03-07T21:58:04">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
@@ -64,7 +64,7 @@
     <property name="manifest.available+main.class" value="true" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner pokergame.DealerAITest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/jameswillby/NetBeansProjects/PokerGame/build/test/results/TEST-pokergame.DealerAITest.xml crashfile=/Users/jameswillby/NetBeansProjects/PokerGame/build/junitvmwatcher999594175874217196.properties propsfile=/Users/jameswillby/NetBeansProjects/PokerGame/build/junit3001658473051957683.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner pokergame.DealerAITest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/jameswillby/NetBeansProjects/PokerGame/build/test/results/TEST-pokergame.DealerAITest.xml crashfile=/Users/jameswillby/NetBeansProjects/PokerGame/build/junitvmwatcher3975048636479665570.properties propsfile=/Users/jameswillby/NetBeansProjects/PokerGame/build/junit1653464887541476727.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="platforms.Default_JavaFX_Platform.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_13.jdk/Contents/Home" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
@@ -216,7 +216,6 @@
     <property name="libs.MySQLDriver.maven-pom" value="" />
     <property name="libs.savaje-ant-utils.src" value="" />
     <property name="ant.file.PokerGame-impl" value="/Users/jameswillby/NetBeansProjects/PokerGame/nbproject/build-impl.xml" />
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="libs.junit_4.javadoc" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/docs/junit-4.10-javadoc.jar" />
     <property name="libs.spring-webmvc.javadoc" value="" />
     <property name="libs.EclipseLink-GlassFish-v3.maven-pom" value="" />
@@ -255,7 +254,6 @@
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
     <property name="platforms.Default_JavaFX_Platform.compiler" value="modern" />
     <property name="netbeans.user" value="/Users/jameswillby/Library/Application Support/NetBeans/7.2.1" />
-    <property name="tests.failed" value="true" />
     <property name="javadoc.additionalparam" value="" />
     <property name="java.io.tmpdir" value="/var/folders/b8/x85z44vs6sx8_4tv8cq0ynvm0000gp/T/" />
     <property name="java.vendor.url" value="http://java.oracle.com/" />
@@ -273,7 +271,6 @@
     <property name="meta.inf.dir" value="src/META-INF" />
     <property name="javadoc.encoding.used" value="UTF-8" />
     <property name="dist.jar" value="dist/PokerGame.jar" />
-    <property name="netbeans.automatic.build" value="true" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.project.name" value="PokerGame" />
     <property name="netbeans.hash.code" value="unique=NB_JAVA_WEBCOMMON_WEBEE_MOB_CND_GROOVY_PHP_GFMOD08af34513-a442-40f5-a2ee-defea25ee205_e72f023b-6383-41e7-b0b1-5a6b31ca0720" />
@@ -293,21 +290,21 @@
     <property name="libs.JWSAntTasks.src" value="" />
     <property name="libs.CopyLibs.maven-pom" value="" />
     <property name="jar.index" value="false" />
-    <property name="libs.hibernate-persistence.maven-pom" value="" />
     <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="libs.hibernate-persistence.maven-pom" value="" />
     <property name="libs.spring-framework300.javadoc" value="" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="libs.jakarta_slide_ant_webdav.maven-pom" value="" />
     <property name="do.archive+main.class.available" value="true" />
     <property name="libs.sjmc-ant-utils.src" value="" />
-    <property name="libs.cdc-agui-swing-layout.javadoc" value="" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="libs.cdc-agui-swing-layout.javadoc" value="" />
     <property name="libs.javac-api.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/nb-javac-api.jar" />
     <property name="java.version" value="1.7.0_13" />
-    <property name="libs.nokiaS80-ant-utils.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/mobility/modules/ext/org-netbeans-modules-j2me-cdc-project-nokiaS80.jar" />
     <property name="platforms.Default_JavaFX_Platform.javafx.runtime.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_13.jdk/Contents/Home/jre" />
-    <property name="javadoc.version" value="false" />
+    <property name="libs.nokiaS80-ant-utils.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/mobility/modules/ext/org-netbeans-modules-j2me-cdc-project-nokiaS80.jar" />
     <property name="run.jvmargs.ide" value="" />
+    <property name="javadoc.version" value="false" />
     <property name="libs.MySQLDriver.javadoc" value="" />
     <property name="org.openide.version" value="deprecated" />
     <property name="source.encoding" value="UTF-8" />
@@ -323,16 +320,16 @@
     <property name="libs.testng.maven-pom" value="" />
     <property name="libs.jaxb.src" value="" />
     <property name="libs.Java-EE-GlassFish-v3.wsgenerate" value="" />
-    <property name="work.dir" value="/Users/jameswillby/NetBeansProjects/PokerGame" />
     <property name="libs.cdc-ant-utils.src" value="" />
+    <property name="work.dir" value="/Users/jameswillby/NetBeansProjects/PokerGame" />
     <property name="libs.jaxb.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/ide/modules/ext/jaxb/jaxb-impl.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/ide/modules/ext/jaxb/jaxb-xjc.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/ide/modules/ext/jaxb/jaxb1-impl.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/ide/modules/ext/jaxb/activation.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/ide/modules/ext/jaxb/api/jaxb-api.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/ide/modules/ext/jaxb/api/jsr173_1.0_api.jar" />
     <property name="do.depend" value="false" />
     <property name="dist.javadoc.dir" value="dist/javadoc" />
     <property name="libs.spring-webmvc3.0.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-webmvc-3.1.1.RELEASE.jar" />
     <property name="libs.swing-layout.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/platform/modules/ext/swing-layout-1.0.4.jar" />
     <property name="libs.restlib.src" value="" />
-    <property name="javac.source" value="1.7" />
     <property name="build.generated.dir" value="build/generated" />
+    <property name="javac.source" value="1.7" />
     <property name="line.separator" value="&#xa;" />
     <property name="libs.hibernate-persistence.src" value="" />
     <property name="java.specification.version" value="1.7" />
@@ -359,19 +356,19 @@
     <property name="libs.JAVADB_DRIVER_LABEL.maven-pom" value="" />
     <property name="libs.struts.javadoc" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/enterprise/docs/struts-1.3.10-javadoc.zip" />
     <property name="ignore.failing.tests" value="true" />
-    <property name="libs.Comet-GlassFish-v3.classpath" value="/Applications/NetBeans/glassfish-3.1.2.2/glassfish/modules/grizzly-comet.jar" />
     <property name="libs.cdc-ant-utils.maven-pom" value="" />
+    <property name="libs.Comet-GlassFish-v3.classpath" value="/Applications/NetBeans/glassfish-3.1.2.2/glassfish/modules/grizzly-comet.jar" />
     <property name="libs.primefaces.src" value="" />
     <property name="libs.cdc-agui-swing-layout.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/mobility/modules/ext/cdc-agui-swing-layout.jar" />
     <property name="dist.dir" value="dist" />
     <property name="libs.groovy-all.javadoc" value="" />
     <property name="do.archive+manifest.available+main.class" value="true" />
     <property name="testng.debug.mode" value="" />
-    <property name="libs.groovy-all.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/groovy/modules/ext/groovy-all.jar" />
     <property name="libs.sjmc-ant-utils.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/mobility/modules/ext/org-netbeans-modules-j2me-cdc-project-sjmc.jar" />
     <property name="javac.fork" value="false" />
-    <property name="libs.JMUnit4CLDC10.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/mobility/modules/ext/jmunit4cldc10-1.2.1.jar" />
+    <property name="libs.groovy-all.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/groovy/modules/ext/groovy-all.jar" />
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="libs.JMUnit4CLDC10.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/mobility/modules/ext/jmunit4cldc10-1.2.1.jar" />
     <property name="default.javac.source" value="1.7" />
     <property name="debug-transport-by-os" value="dt_socket" />
     <property name="sun.jnu.encoding" value="US-ASCII" />
@@ -381,9 +378,9 @@
     <property name="build.test.results.dir" value="build/test/results" />
     <property name="java.runtime.version" value="1.7.0_13-b20" />
     <property name="libs.ejb3-persistence.javadoc" value="" />
-    <property name="jna.platform.library.path" value="/usr/lib:/usr/lib" />
     <property name="manifest.available+main.class+mkdist.available" value="true" />
     <property name="libs.sjmc-ant-utils.javadoc" value="" />
+    <property name="jna.platform.library.path" value="/usr/lib:/usr/lib" />
     <property name="default.javac.target" value="1.7" />
     <property name="libs.Java-EE-GlassFish-v3.src" value="" />
     <property name="libs.junit_4.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/platform/modules/ext/junit-4.10.jar" />
@@ -397,12 +394,12 @@
     <property name="libs.jsf20.javadoc" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/enterprise/docs/javaee6-doc-api.zip" />
     <property name="java.ext.dirs" value="/Users/jameswillby/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_13.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
     <property name="libs.metro.src" value="" />
-    <property name="libs.savaje-ant-utils.maven-pom" value="" />
     <property name="libs.semc-ant-utils.src" value="" />
+    <property name="libs.savaje-ant-utils.maven-pom" value="" />
     <property name="libs.absolutelayout.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/AbsoluteLayout.jar" />
     <property name="excludes" value="" />
-    <property name="libs.restlib.maven-pom" value="" />
     <property name="libs.metro.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/ide/modules/ext/jaxb/activation.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/enterprise/modules/ext/metro/webservices-api.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/enterprise/modules/ext/metro/webservices-extra-api.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/enterprise/modules/ext/metro/webservices-extra.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/enterprise/modules/ext/metro/webservices-rt.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/enterprise/modules/ext/metro/webservices-tools.jar" />
+    <property name="libs.restlib.maven-pom" value="" />
     <property name="apple.laf.useScreenMenuBar" value="true" />
     <property name="java.class.path" value="/Users/jameswillby/Downloads/mockito-all-1.9.5.jar:/Users/jameswillby/NetBeansProjects/PokerGame/build/classes:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/platform/modules/ext/junit-4.10.jar:/Users/jameswillby/NetBeansProjects/PokerGame/build/test/classes:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/ant/lib/ant-launcher.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/ant/lib/ant.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/ant/lib/ant-junit.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/ant/lib/ant-junit4.jar" />
     <property name="do.mkdist" value="true" />
@@ -426,8 +423,8 @@
     <property name="libs.CopyLibs.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/ant/extra/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
     <property name="libs.spring-framework300.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/ide/modules/org-apache-commons-logging.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/cglib-2.2.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-aop-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-asm-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-aspects-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-beans-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-context-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-context-support-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-core-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-expression-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-instrument-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-instrument-tomcat-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-jdbc-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-jms-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-orm-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-oxm-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-test-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-tx-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-web-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-webmvc-portlet-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-webmvc-3.1.1.RELEASE.jar:/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/spring-3.0/spring-struts-3.1.1.RELEASE.jar" />
     <property name="libs.jsp-compiler.maven-pom" value="" />
-    <property name="libs.spring-webmvc.maven-pom" value="" />
     <property name="libs.Java-EE-GlassFish-v3.wsinterop" value="" />
+    <property name="libs.spring-webmvc.maven-pom" value="" />
     <property name="run.jvmargs" value="" />
     <property name="libs.ejb3-persistence.classpath" value="/Applications/NetBeans/NetBeans 7.2.1.app/Contents/Resources/NetBeans/java/modules/ext/hibernate/ejb3-persistence.jar" />
     <property name="libs.JAXB-ENDORSED.src" value="" />
@@ -444,19 +441,19 @@
     <property name="ant.version" value="Apache Ant(TM) version 1.8.3 compiled on February 26 2012" />
     <property name="file.encoding" value="US-ASCII" />
     <property name="build.classes.excludes" value="**/*.java,**/*.form" />
-    <property name="javadoc.nonavbar" value="false" />
     <property name="jdkBug6558476" value="false" />
+    <property name="javadoc.nonavbar" value="false" />
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
   </properties>
-  <testcase classname="pokergame.DealerAITest" name="test3" time="4.845" />
-  <testcase classname="pokergame.DealerAITest" name="test4" time="1.494" />
-  <testcase classname="pokergame.DealerAITest" name="test5" time="1.485" />
-  <testcase classname="pokergame.DealerAITest" name="test6" time="1.453" />
-  <testcase classname="pokergame.DealerAITest" name="test7" time="1.501" />
-  <testcase classname="pokergame.DealerAITest" name="test8" time="1.509" />
-  <testcase classname="pokergame.DealerAITest" name="test2" time="1.521" />
-  <testcase classname="pokergame.DealerAITest" name="test1" time="1.519" />
+  <testcase classname="pokergame.DealerAITest" name="test7" time="4.849" />
+  <testcase classname="pokergame.DealerAITest" name="test8" time="1.506" />
+  <testcase classname="pokergame.DealerAITest" name="test4" time="1.478" />
+  <testcase classname="pokergame.DealerAITest" name="test2" time="1.53" />
+  <testcase classname="pokergame.DealerAITest" name="test6" time="1.449" />
+  <testcase classname="pokergame.DealerAITest" name="test5" time="1.474" />
+  <testcase classname="pokergame.DealerAITest" name="test3" time="1.488" />
+  <testcase classname="pokergame.DealerAITest" name="test1" time="1.511" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
