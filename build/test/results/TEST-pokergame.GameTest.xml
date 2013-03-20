@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Macintosh-7.local" name="pokergame.CardTest" tests="4" time="0.343" timestamp="2013-03-07T21:58:03">
+<testsuite errors="0" failures="0" hostname="Macintosh-7.local" name="pokergame.GameTest" tests="2" time="0.071" timestamp="2013-03-07T21:58:20">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
@@ -64,7 +64,7 @@
     <property name="manifest.available+main.class" value="true" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner pokergame.CardTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/jameswillby/NetBeansProjects/PokerGame/build/test/results/TEST-pokergame.CardTest.xml crashfile=/Users/jameswillby/NetBeansProjects/PokerGame/build/junitvmwatcher4595174782458403756.properties propsfile=/Users/jameswillby/NetBeansProjects/PokerGame/build/junit8091937255035714274.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner pokergame.GameTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/jameswillby/NetBeansProjects/PokerGame/build/test/results/TEST-pokergame.GameTest.xml crashfile=/Users/jameswillby/NetBeansProjects/PokerGame/build/junitvmwatcher3095263466176255302.properties propsfile=/Users/jameswillby/NetBeansProjects/PokerGame/build/junit4203966658401956780.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="platforms.Default_JavaFX_Platform.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_13.jdk/Contents/Home" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
@@ -446,10 +446,8 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
   </properties>
-  <testcase classname="pokergame.CardTest" name="testGetValue" time="0.003" />
-  <testcase classname="pokergame.CardTest" name="testSetSuite" time="0.0" />
-  <testcase classname="pokergame.CardTest" name="testSetValue" time="0.0" />
-  <testcase classname="pokergame.CardTest" name="testGetSuite" time="0.0" />
+  <testcase classname="pokergame.GameTest" name="playGame" time="0.002" />
+  <testcase classname="pokergame.GameTest" name="setUpGame" time="0.004" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
