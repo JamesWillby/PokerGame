@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.mockito.Mockito.*;
 
 /**
  *
@@ -60,11 +61,12 @@ public class GameTest {
     }
     
     @Test
-    public void playGame(){
+    public void testPlayerHand(){
     
-    
-    
-    
-    
+        Game game = new Game();
+        testGUIEventHandler mockGHandler = new testGUIEventHandler();
+        game.changeUserCards(mockGHandler.playerHand(game.getPlayerHand(1)));
+        
 }
+
 }

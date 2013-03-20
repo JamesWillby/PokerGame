@@ -14,13 +14,8 @@ import java.util.Vector;
 public interface PokerGamePerson {
     
      public void takeCard(Card cr);
-     public String evaluateTheHands(Hand dealer, Hand player); // amend this to modularise
+     public void evaluateTheHand(Hand player);
      public void shuffleTheDeck();
-     public int FindTheHighCard(Vector<Card> hand);
-     public boolean IsThereAStraight(Vector<Card> hand);
-     public boolean IsThereAFlush(Vector <Card> hand);
-     public int AreThereSets(Vector<Card> hand);
-     public int sumCardValues(Vector<Card> cr);
      public void addToDiscardPile(Card cr);
      public int cardsRemainingInTheDeck();
      public Card dealACard();

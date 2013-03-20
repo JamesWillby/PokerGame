@@ -14,6 +14,7 @@ class Dealer implements PokerGamePerson {
     private Hand hand = null;
     private Deck deck = null;
     private Vector<Card> discards = null;
+    private DealerAI dealerBrain = null;
 
     
     public Dealer(){                // create a new instance and initialises and assigns the deck,                          
@@ -42,47 +43,34 @@ class Dealer implements PokerGamePerson {
         hand.add(cr);   
     }
 
-   
+    @Override
+    public void evaluateTheHand(Hand player){
+        dealerBrain =  new DealerAI(player);
+        Vector<Card> throwAway = dealerBrain.whichCardsShouldISwap();
+        int num = throwAway.size();
+        Hand newHand = new Hand();
+        for (int y = 0; y < hand.size();y++){
+        boolean seen = false;    
+        for (int x = 0; x < num;x++) {
+          if (throwAway.get(x).equals(hand.get(y)))
+              seen = true;
+        }
+            if (!seen) newHand.add(hand.get(y));
+        }
+        hand = null;
+        for (int x=0; x < num;x++)
+        newHand.add(dealACard());
+        hand = newHand;
+    }
+        
     @Override
     public Card throwAwayCard() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
-
-
     
     @Override
     public int cardsRemainingInTheDeck(){
     return deck.cardsIntheDeck();
-    }
-
-    @Override
-    public String evaluateTheHands(Hand dealer, Hand player) {
-     throw new UnsupportedOperationException("Not supported yet.");   
-    }
-
-    @Override
-    public int FindTheHighCard(Vector<Card> hand) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
-    public boolean IsThereAStraight(Vector<Card> hand) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
-    public boolean IsThereAFlush(Vector<Card> hand) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
-    public int AreThereSets(Vector<Card> hand) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
-    public int sumCardValues(Vector<Card> cr) {
-        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
