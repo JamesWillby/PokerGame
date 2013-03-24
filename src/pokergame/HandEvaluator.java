@@ -12,7 +12,7 @@ import java.util.Vector;
  * @author jameswillby
  */
 
-//latesttest
+
 public abstract class HandEvaluator {
 
 private static int counter = 0;
@@ -44,7 +44,12 @@ public static int assessHand(Hand hand){
     
  }
  static boolean isThereAStraight(Hand hand){
-      for(int x = 0;x < hand.size()-1; x++) // now we look for a difference of one between sequential cards
+     
+	 //first check for ace low straight
+	 if (hand.get(0).getValue() == 2 && hand.get(1).getValue() == 3 && hand.get(2).getValue() == 4 && hand.get(3).getValue() == 5 && hand.get(4).getValue() == 14)
+		 return true;
+	 
+	  for(int x = 0; x < hand.size()-1 ; x++) // look for a difference of one between sequential cards
       {                                     
              if (hand.get(x).getValue()+1 != hand.get(x+1).getValue()) // if difference is greater than 1, false
              return false; 

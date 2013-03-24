@@ -12,7 +12,7 @@ public class Hand {
  
     protected Vector<Card> hand = null;
 
-    Hand() {
+    public Hand() {
         this.hand = new Vector<Card>();
     }
     
