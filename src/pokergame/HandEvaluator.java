@@ -11,6 +11,8 @@ import java.util.Vector;
  *
  * @author jameswillby
  */
+
+//latesttest
 public abstract class HandEvaluator {
 
 private static int counter = 0;
