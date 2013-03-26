@@ -33,6 +33,9 @@ public class DealerAI {
              * hand for making the specified number of changes
              */ 
             
+		 if (currentrank >= 4)
+				return swapcardsnocards;
+		 
 		Double bestrankdiffonecard = rankDiffSwapOneCard();
 		
 		Double bestrankdifftwocards = rankDiffSwapTwoCards();

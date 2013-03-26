@@ -8,6 +8,8 @@ package pokergame;
  *
  * @author jameswillby
  */
+
+//test
 public class Card {
     
     private String suite;
