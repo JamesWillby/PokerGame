@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 package pokergame;
-import java.util.Vector;
+
 import java.util.Scanner;
 /**
  *
